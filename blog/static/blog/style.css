@@ -1,0 +1,20 @@
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
+
+h1 {
+  color: #9dcdeb; }
+
+.svg-heart {
+  fill: #de5d6c; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1400px; }
+  @media (min-width: 1025px) {
+    .container {
+      padding: 0 60px; } }
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px; }

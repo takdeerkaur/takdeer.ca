@@ -1,0 +1,50 @@
+{
+  "name": "takdeer.ca",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takdeerkaur/takdeer.ca.git"
+  },
+  "author": "Takdeer Kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takdeerkaur/takdeer.ca/issues"
+  },
+  "homepage": "https://github.com/takdeerkaur/takdeer.ca#readme",
+  "dependencies": {
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12",
+    "cssnano": "^3.8.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.5.2",
+    "postcss-assets": "^4.1.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-scss": "^0.3.1",
+    "postcss-sorting": "^1.7.0",
+    "precss": "^1.4.0",
+    "time-grunt": "^1.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery",
+    "jQuery": "global:jQuery"
+  }
+}

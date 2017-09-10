@@ -1,0 +1,37 @@
+// -------------------------------------
+//  Media Query Breakpoints
+// -------------------------------------
+$break--mobile  : 500px;
+$break--tablet  : 768px;
+$break--ipad    : 1025px;
+$break--desktop : 1280px;
+$break--max     : 1440px;
+
+// Progressive Enhancement Breakpoints
+@mixin bp($point) {
+  $bp-mobile: '(min-width: 0)';
+  $bp-tablet: '(min-width:' $break--mobile')';
+  $bp-ipad: '(min-width:' $break--tablet')';
+  $bp-laptop: '(min-width:' $break--ipad')';
+  $bp-max: '(min-width:' $break--desktop')';
+  $bp-plus: '(min-width:' $break--max')';
+
+  @if $point == plus {
+    @media #{$bp-plus} { @content; }
+  }
+  @else if $point == max  {
+    @media #{$bp-max} { @content; }
+  }
+  @else if $point == laptop  {
+    @media #{$bp-laptop} { @content; }
+  }
+  @else if $point == ipad {
+    @media #{$bp-ipad} { @content; }
+  }
+  @else if $point == tablet {
+    @media #{$bp-tablet}  { @content; }
+  }
+  @else if $point == mobile {
+    @media #{$bp-mobile}  { @content; }
+  }
+}
